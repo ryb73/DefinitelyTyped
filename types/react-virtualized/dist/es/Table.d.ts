@@ -246,6 +246,11 @@ export type TableProps = GridCoreProps & {
      */
     onRowDoubleClick?: ((info: RowMouseEventHandlerParams) => void) | undefined;
     /**
+     * Callback invoked when a user right-clicks on a table row.
+     * ({ index: number }): void
+     */
+    onRowRightClick?: ((info: RowMouseEventHandlerParams) => void) | undefined;
+    /**
      * Callback invoked when the mouse leaves a table row.
      * ({ index: number }): void
      */
